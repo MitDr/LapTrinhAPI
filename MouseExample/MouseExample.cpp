@@ -161,6 +161,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         TrackPopupMenu(subMenu, TPM_RIGHTBUTTON, point.x, point.y, 0, hWnd, NULL);
         break;
     case WM_LBUTTONDBLCLK:
+        count --;
         hdc = GetDC(hWnd);
         //hpen = CreatePen(stylePen, 1, colorPen);
         SelectObject(hdc, hpen);
